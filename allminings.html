@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebTech Company Ltd</title>
+  <link rel="shortcut icon" href="image2/images.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+     body {
+       font-family: Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+       background-color: #fff;
+       color: #333;
+     }
+
+     header {
+       background-color: #000;
+       color: #ffd700;
+       padding: 0.1em 0;
+       text-align: center;
+       font-size: 0.9em;
+     }
+
+     nav ul {
+       list-style: none;
+       padding: 0;
+       text-align: center;
+       background: #ffd700;
+       margin: 0;
+       padding: 2em 0;
+     }
+
+     nav ul li {
+       display: inline;
+       margin: 0 15px;
+     }
+
+     nav ul li a {
+       color: #000;
+       text-decoration: none;
+       font-weight: bold;
+     }
+
+     main {
+       padding: 2em;
+       max-width: 1100px;
+       margin: auto;
+     }
+
+     h2 {
+       color: #000;
+       border-bottom: 3px solid #ffd700;
+       padding-bottom: 5px;
+     }
+
+     #services, #about, #blog, #contact {
+       margin-bottom: 3em;
+       background: #f9f9f9;
+       padding: 2em;
+       border-radius: 10px;
+       box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+     }
+
+     .service-item {
+        
+       align-items: center;
+       margin-bottom: 1.5em;
+     }
+
+     .service-item img {
+       width: 1000px;
+       height: 400px;
+       margin-right: 15px;
+       border-radius: 10px;
+     }
+      @media(max-width:997px){
+        
+     .service-item img {
+       width: 270px;
+       height:270px;
+       margin-right: 15px;
+       border-radius: 10px;
+     }
+      }
+     .team-member {
+       display: flex;
+       align-items: center;
+       margin-top: 1em;
+     }
+
+     .team-member img {
+       border-radius: 50%;
+       margin-right: 1em;
+       width: 80px;
+       height: 80px;
+     }
+
+     form input, form textarea {
+       width: 100%;
+       padding: 10px;
+       margin: 10px 0;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+     }
+     .btn-container{
+    
+     }
+     
+     button{
+       background: #ffd700;
+       color: #070707;
+       padding: 10px 20px;
+       border: none;
+       cursor: pointer;
+       font-weight: bold;
+       border-radius: 10px;
+       /* margin-right: 0px; */
+     }
+     button:hover {
+       background: #000;
+       color: #ffd700;
+
+     }
+     .btn1{
+       background: #05c22e;
+       color: #ffffff;
+       padding: 10px 20px;
+       border: none;
+       cursor: pointer;
+       font-weight: bold;
+       border-radius: 10px;
+       margin-left: 20px;
+       margin-bottom: 5px;
+     }
+     .btn1:hover{
+       background: #ffffff;
+       color: #0aa615;
+
+     }
+     .btn2{
+       background: #3700fd;
+       color: #ffffff;
+       padding: 10px 20px;
+       border: none;
+       cursor: pointer;
+       font-weight: bold;
+       border-radius: 10px;
+       margin-left: 20px;
+       margin-bottom: 5px;
+     }
+     .btn2:hover{
+       background: #fbfbfb;
+       color: #001effe0;
+
+     }
+     .btn3{
+       background: #f01eff;
+       color: #ffffff;
+       padding: 10px 20px;
+       border: none;
+       cursor: pointer;
+       font-weight: bold;
+       border-radius: 10px;
+       margin-left: 20px;
+       margin-bottom: 5px;
+     }
+     .btn3:hover{
+       background: #ffffff;
+       color: #f01eff;
+
+     }
+     .btn4{
+       background: #366bcc;
+       color: #ffffff;
+       padding: 10px 20px;
+       border: none;
+       cursor: pointer;
+       font-weight: bold;
+       border-radius: 10px;
+       margin-left: 25px;
+       margin-bottom: 5px;
+     }
+     .btn4:hover{
+       background: #ffffff;
+       color: #0051ff;
+
+     }
+     .btn5{
+       background: #000000;
+       color: #ffffff;
+       padding: 10px 20px;
+       border: none;
+       cursor: pointer;
+       font-weight: bold;
+       border-radius: 10px;
+       margin-left: 20px;
+       margin-bottom: 5px;
+     }
+     .btn5:hover{
+       background: #ffffff;
+       color: #000000;
+
+     }
+     .btn6{
+       background: #ff0000;
+       color: #ffffff;
+       padding: 10px 20px;
+       border: none;
+       cursor: pointer;
+       font-weight: bold;
+       border-radius: 10px;
+       margin-left: 20px;
+     }
+     .btn6:hover{
+       background: #ffffff;
+       color: #ff0000;
+
+     }
+
+     footer {
+       background-color: #000;
+     
+       text-align: center;
+       padding: 0.2em 0;
+     }
+     footer p{
+        color:#ffd700 ;
+     }
+     h4{
+        color:#99920c ;
+        padding-top: 20px;
+        padding-bottom: 10px;
+     }
+     span{
+        font-weight: bold;
+     }
+     a{
+        text-decoration: none;
+     }
+     h5{
+        color: white;
+        font-weight: bold;
+     }
+     #social {
+        display: flex;
+        gap: 100px;
+        margin-left: 50px;
+     }
+     #on{
+border-radius: 50%;
+height: 30px;
+width: 30px;
+     }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to WebTech Company Ltd</h1>
+
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#blog">Certification</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <section id="services">
+      <h2>we offer online bussines</h2>
+      <div class="service-item">
+        <img src="https://img.freepik.com/free-vector/online-business-success-concept_1308-173262.jpg?t=st=1739899066~exp=1739902666~hmac=937b44e8432fb1796e184391dd73baab566b29a29f59e54d9efcac6183c10af2&w=740" border="1px" alt="Software Development"><br>
+        <p><i class="fas fa-money-bill-wave"></i> <h4>Trusted Online Business (Make Money Online)         
+           
+        </h4></p>
+      </div>
+      <div id="service-item">
+        <p>We make on Minings Where we Have many online minings developed by our Developers and There are also minings platforms <br><br>
+            we made partnership because there objectives are good for Everyone this helps us to be great in minings business and also we have Experienced people 
+        and developers that analyse different minings to  know if it's true(not scam) And after provide them to you inorder to gain profits for eachone <br><br>
+    Then with WEBTECH Company we are here to teach you about how you can gain money from Minings and evenhow you can make your own minings </p>
+         <br>
+         <h4>Join Here:</h4>
+         <div id="btn-container" class="btn-container">
+         <a href=""><button class="btn1" id="btn1">WhatsApp</button></a> 
+         <!-- <a href=""><button class="btn2" id="btn2">FaceBook</button></a>  -->
+         <!-- <a href=""><button class="btn3" id="btn3">InstaGram</button></a><a href=""> <a href="">
+          <button class="btn5" id="btn5">X(Twitter)</button></a><button class="btn4" id="btn4">Telegram</button></a> 
+        <a href=""><button class="btn6" id="btn6">YouTube</button></a>  -->
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <h5>OUR SOCIAL MEDIA</h5>
+    <div id="social">
+       
+            <img id="on" src="image2/download (8).png" alt="">
+            <img id="on" src="image2/download (7).png" alt="">
+            <img id="on" src="image2/home_instagram_logo.png" alt="">
+       
+    </div> <br>
+    <p>&copy; 2025 WebTech Company Ltd. All rights reserved.</p>
+  </footer>
+</body>
+</html>
